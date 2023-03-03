@@ -38,8 +38,7 @@ The Trainer page should:
  - list the Pokémon that the trainer has collected
   - for each collected Pokémon, display the Pokémon name, image and other information
   - user/trainer must also be able to remove/release a Pokémon from their collection from the Trainer page
-  
-  catch <img src="/pictures/catchButtonAfterCapture.PNG"> not catch <img src="/pictures/catchButtonBeforeCapture.PNG">
+  - catch <img src="/pictures/catchButtonAfterCapture.PNG"> not catch <img src="/pictures/catchButtonBeforeCapture.PNG">
 
 ## **3. Pokémon Catalogue Page**
 

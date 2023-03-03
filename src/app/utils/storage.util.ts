@@ -3,7 +3,7 @@ export class StorageUtil{
     public static storageSave<T>(key: string, value: T): void{
         sessionStorage.setItem(key, JSON.stringify(value))
     }
-    // Raed a generic type from session storage
+    // Read a generic type from session storage
     public static storageRead<T>(key: string): T | undefined{
         const storedValue = sessionStorage.getItem(key)
         try{
@@ -15,5 +15,9 @@ export class StorageUtil{
             sessionStorage.removeItem(key)
             return undefined
         }
+    }
+    // Remove a generic type in session storage
+    public static storageDelete(key: string) {
+        sessionStorage.removeItem(key)
     }
 }

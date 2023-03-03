@@ -1,4 +1,7 @@
-# **Pokémon Trainer App**
+# **Pokémon-trainer-App**
+## Contributors:
+ - George Pegias 
+ - Ziogas Tilemachos
 ## **Idea**
 Build a Pokémon Trainer web app using the Angular Framework. 
 The application allows a user to collect Pokémon ( Generation I) received from the PokeAPI.

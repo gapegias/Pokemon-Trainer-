@@ -1,0 +1,20 @@
+<div class="h-screen flex flex-col items-center justify-center">
+    <img src=" ../../assets/images/loginImage.png" class="w-6/12 my-10">
+    <form #loginForm="ngForm" 
+          (ngSubmit)="loginSubmit(loginForm)" 
+           class="h-screen items-center justify-center text-3xl">
+        <fieldset class="inline-block my-3">
+            <input type="text"
+                   ngModel
+                   #username="ngModel"
+                   name="username" 
+                   id="username" 
+                   class="border border-blue-800 focus:ring-0 p-1 mx-3 py-1 px-5 rounded-full w-full md:w-auto" 
+                   placeholder="What's your name?"/>
+        </fieldset>
+        <button type="submit" 
+                class="bg-blue-500 hover:bg-indigo-600 text-white font-bold py-1 px-5 rounded-full">
+            Login
+        </button>
+    </form>
+</div>

@@ -1,0 +1,15 @@
+
+<nav class="bg-orange-300 sticky top-0 w-full text-4xl px-3 py-3 flex justify-between items-center font-bold">
+    <span class="px-6">Pokemon-Trainer-App</span>
+        <ul class="flex" *ngIf="trainer !== undefined">
+            <li class="px-3">
+                <a routerLink="/pokemons" class="bg-red-500 hover:bg-green-600 text-white py-1 px-5 rounded-full">Pokemons</a>
+            </li>
+            <li class="px-2">|</li>
+            <li class="px-2">
+                <a routerLink="/trainer" class="bg-red-500 hover:bg-green-600 text-white py-1 px-5 rounded-full">Trainer</a>
+            </li>
+            <li class="px-2">|</li>
+            <li class="px-2">trainer: {{ trainer.username }}</li>
+        </ul>
+</nav>

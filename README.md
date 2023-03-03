@@ -18,7 +18,7 @@ Make sure you have the following tools available:
 
 ## **1. Login Page**
 
-<img src="/pictures/loginPage.png">
+<img src="/pictures/loginPage.PNG">
 
 The first thing a user should see is the "Login page" where:
  - the user must be able to enter their "Trainer name" before being able to collect any Pokémon
@@ -29,7 +29,7 @@ The first thing a user should see is the "Login page" where:
 
 ## **2. Trainer Page**
 
-<img src="/pictures/pokemonCataloguePage.png">
+<img src="/pictures/pokemonCataloguePage.PNG">
 
 A user: 
  - may only view this page if there is a Trainer name that exists in session storage
@@ -39,11 +39,11 @@ The Trainer page should:
   - for each collected Pokémon, display the Pokémon name, image and other information
   - user/trainer must also be able to remove/release a Pokémon from their collection from the Trainer page
   
-  catch <img src="/pictures/catchButtonAfterCapture.png"> not catch <img src="/pictures/catchButtonBeforeCapture.png">
+  catch <img src="/pictures/catchButtonAfterCapture.PNG"> not catch <img src="/pictures/catchButtonBeforeCapture.PNG">
 
 ## **3. Pokémon Catalogue Page**
 
-<img src="/pictures/trainerPage.png">
+<img src="/pictures/trainerPage.PNG">
 
 The Catalogue page: 
  - may NOT be viewed if there is no Trainer name stored in session storage 
@@ -52,7 +52,7 @@ The Catalogue page:
  
  ## **Navigation bar**
  
- <img src="/pictures/navbar.png">
+ <img src="/pictures/navbar.PNG">
  
  Create a navigation bar with 3 buttons:
   - pokemons, user navigate to Pokemon Catalogue Page

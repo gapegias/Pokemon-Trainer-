@@ -1,27 +1,61 @@
-# NgPokemonTrainer
+# **Pokémon Trainer App**
+## **Idea**
+Build a Pokémon Trainer web app using the Angular Framework. 
+The application allows a user to collect Pokémon ( Generation I) received from the PokeAPI.
+User must enter username before being able to collect any Pokémon and be able to view the Pokémon that have been collected
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.0.
+See website here: https://pokemon-trainer-dedv.vercel.app
 
-## Development server
+## **Set up the development environment**
+Make sure you have the following tools available:
+  - NPM/Node.js (LTS – Long Term Support version)
+  - Angular CLI
+  - Visual Studio Code Text Editor/ IntelliJ
+  - Browser Developer Tools for testing and debugging
+  - Trainer API: https://github.com/dewald-els/noroff-assignment-api
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## **Requirements for the pokemon trainer app**
 
-## Code scaffolding
+## **1. Login Page**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img src="/pictures/loginPage.png">
 
-## Build
+The first thing a user should see is the "Login page" where:
+ - the user must be able to enter their "Trainer name" before being able to collect any Pokémon
+ - there should be a button that saves the Trainer name to the Trainer API and in session storage
+ - app must then be redirected to the main page, the Pokémon Catalogue page
+ - users may NOT be able to see the Pokémon Catalogue without have a Trainer name stored in session storage,  achieving this functionality by using a Guard service
+ - if username exists in session storage, automatically redirect from the landing page to the Pokémon Catalogue page
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## **2. Trainer Page**
 
-## Running unit tests
+<img src="/pictures/pokemonCataloguePage.png">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+A user: 
+ - may only view this page if there is a Trainer name that exists in session storage
+ - redirect back to the Landing page if they do not have a Trainer name stored in session storage
+The Trainer page should:
+ - list the Pokémon that the trainer has collected
+  - for each collected Pokémon, display the Pokémon name, image and other information
+  - user/trainer must also be able to remove/release a Pokémon from their collection from the Trainer page
+  
+  catch <img src="/pictures/catchButtonAfterCapture.png"> not catch <img src="/pictures/catchButtonBeforeCapture.png">
 
-## Running end-to-end tests
+## **3. Pokémon Catalogue Page**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<img src="/pictures/trainerPage.png">
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The Catalogue page: 
+ - may NOT be viewed if there is no Trainer name stored in session storage 
+ - list the Pokémon name, image and other information
+ - get all the Pokémon and store it in session storage, so when the page is reloaded, read from session storage rather than the API 
+ 
+ ## **Navigation bar**
+ 
+ <img src="/pictures/navbar.png">
+ 
+ Create a navigation bar with 3 buttons:
+  - pokemons, user navigate to Pokemon Catalogue Page
+  - trainer, user navigate to Trainer Page
+  - logout, user navigate to Login Page, by delete user from session storage 
+ 

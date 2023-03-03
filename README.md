@@ -1,4 +1,4 @@
-# **Pokémon-trainer-App**
+# **Pokémon-Trainer-App**
 ## Contributors:
  - George Pegias 
  - Ziogas Tilemachos

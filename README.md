@@ -4,7 +4,7 @@
  - Ziogas Tilemachos
 ## **Idea**
 Build a Pokémon Trainer web app using the Angular Framework. 
-The application allows a user to collect Pokémon ( Generation I) received from the PokeAPI.
+The application allows a user to collect Pokémon (Generation I) received from the PokeAPI.
 User must enter username before being able to collect any Pokémon and be able to view the Pokémon that have been collected
 
 See website here: https://pokemon-trainer-dedv.vercel.app
